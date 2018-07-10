@@ -1,5 +1,6 @@
 Pwb::Engine.routes.draw do
 
+  mount Pwb::Engine => '/'
 
   # devise_for :users, class_name: "Pwb::User", module: :devise
   root to: 'welcome#index'
